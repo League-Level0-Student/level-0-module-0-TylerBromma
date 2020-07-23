@@ -18,9 +18,11 @@ public class RobotSpiral {
 		// SPEED. Set the robot to go at max speed (100)
 		rob.setSpeed(100);
         // LOOP. Use a for loop to repeat ALL the following lines of code 50 times. 
-		for (int i = 0; i < args.length; i++) {
+		for (int i = 0; i < 50; i++) {
 			rob.setRandomPenColor();
 			rob.move(5*i);
+			rob.turn(360/7);
+			rob.setPenWidth(i);
 		}
 				// Change the robot pen color to random
 			
